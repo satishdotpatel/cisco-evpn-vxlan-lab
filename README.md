@@ -186,4 +186,36 @@ PfxRcd
 10.255.1.22     4 65001       1570       1764       21    0    0    1d00h 0
 ```
 
+### On LEAF switches VxLAN tunnel 
+```
+leaf-1-a# show nve peers
+Interface Peer-IP                                 State LearnType Uptime   Route
+r-Mac
+--------- --------------------------------------  ----- --------- -------- -----
+------------
+nve1      10.255.255.1                            Up    CP        05:11:53 5215.
+f753.1b08
+nve1      10.255.255.20                           Up    CP        1d00h    520c.
+b94a.1b08
+```
+
+### VNI status 
+```
+leaf-1-a# show nve vni
+Codes: CP - Control Plane        DP - Data Plane
+       UC - Unconfigured         SA - Suppress ARP
+       S-ND - Suppress ND
+       SU - Suppress Unknown Unicast
+       Xconn - Crossconnect
+       MS-IR - Multisite Ingress Replication
+       HYB - Hybrid IRB mode
+
+Interface VNI      Multicast-group   State Mode Type [BD/VRF]      Flags
+--------- -------- ----------------- ----- ---- ------------------ -----
+nve1      10060    239.1.1.1         Up    CP   L2 [60]
+nve1      10061    239.1.1.1         Up    CP   L2 [61]
+nve1      10100    239.1.1.100       Up    CP   L2 [100]
+nve1      10555    n/a               Up    CP   L3 [ISP]
+```
+
 
