@@ -218,4 +218,23 @@ nve1      10100    239.1.1.100       Up    CP   L2 [100]
 nve1      10555    n/a               Up    CP   L3 [ISP]
 ```
 
+### BGP Routes on LEAF switches
+```
+leaf-1-a# show ip bgp vrf ISP
+BGP routing table information for VRF ISP, address family IPv4 Unicast
+BGP table version is 22, Local Router ID is 69.25.124.1
+Status: s-suppressed, x-deleted, S-stale, d-dampened, h-history, *-valid, >-best
+Path type: i-internal, e-external, c-confed, l-local, a-aggregate, r-redist, I-i
+njected
+Origin codes: i - IGP, e - EGP, ? - incomplete, | - multipath, & - backup, 2 - b
+est2
+
+   Network            Next Hop            Metric     LocPrf     Weight Path
+*>i0.0.0.0/0          10.255.255.1                      100          0 99999 888
+88 i
+*>i69.25.124.0/23     10.255.255.1                      100          0 i
+* i69.25.124.0/24     10.255.255.20            0        100          0 ?
+* i                   10.255.255.20            0        100          0 ?
+*>r                   0.0.0.0                  0        100      32768 ?
+```
 
