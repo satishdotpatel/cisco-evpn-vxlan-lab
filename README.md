@@ -167,4 +167,23 @@ IP Multicast Routing Table for VRF "default"
     Ethernet1/1, uptime: 1d00h, pim
 ```
 
+### BGP neighbors 
+```
+spine-1# show ip bgp summary
+
+Neighbor        V    AS    MsgRcvd    MsgSent   TblVer  InQ OutQ Up/Down  State/
+PfxRcd
+10.255.1.1      4 65001        373        395       21    0    0 05:36:16 0
+
+10.255.1.2      4 65001        361        388       21    0    0 05:48:20 0
+
+10.255.1.11     4 65001       3543       3632       21    0    0    1d00h 0
+
+10.255.1.12     4 65001       1601       1779       21    0    0    1d00h 0
+
+10.255.1.21     4 65001       1576       1688       21    0    0    1d00h 0
+
+10.255.1.22     4 65001       1570       1764       21    0    0    1d00h 0
+```
+
 
