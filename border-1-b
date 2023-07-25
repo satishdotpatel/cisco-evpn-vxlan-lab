@@ -30,6 +30,8 @@ username cisco password 5 $5$HGNLOB$4LmiOq3ts8kYPmrwja/.Zx0ClyKKrbzX.jItoe3rDl6
  role network-admin
 username cisco passphrase  lifetime 99999 warntime 14 gracetime 3
 ip domain-lookup
+system qos
+  service-policy type network-qos jumboframes
 snmp-server user admin network-admin auth md5 041E7E6FF8BB97F2ADF1CB25B6673F2D60
 B9 priv aes-128 0166545D89FDA7F7D1E0D66EE06B7A6F4DC7 localizedV2key
 snmp-server user cisco network-admin auth md5 366B7E6FF8BB97F2ADF1CB25B6673F2D60
