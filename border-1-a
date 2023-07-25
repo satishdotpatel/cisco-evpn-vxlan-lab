@@ -27,6 +27,8 @@ feature nv overlay
 username admin password 5 $5$IFHHNI$jXRx4R2jJdwZES9DzncAh86Z149DJ9qfVtCeK4RpJU4
  role network-admin
 ip domain-lookup
+system qos
+  service-policy type network-qos jumboframes
 copp profile strict
 snmp-server user admin network-admin auth md5 5330237586E8AB1A46BF1AF59655700F1B
 72 priv aes-128 483B1A07407C3C99CA2DFB764ACAD8F891B8 localizedV2key
