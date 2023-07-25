@@ -286,7 +286,7 @@ router bgp 65001
   vrf ISP
     log-neighbor-changes
     address-family ipv4 unicast
-      aggregate-address 69.25.124.0/23 summary-only
+      aggregate-address 69.25.124.0/24 summary-only
     neighbor 201.201.201.201
       remote-as 88888
       local-as 99999
