@@ -21,7 +21,6 @@ feature pim
 feature fabric forwarding
 feature interface-vlan
 feature vn-segment-vlan-based
-feature lacp
 feature nv overlay
 
 username admin password 5 $5$IFHHNI$jXRx4R2jJdwZES9DzncAh86Z149DJ9qfVtCeK4RpJU4
